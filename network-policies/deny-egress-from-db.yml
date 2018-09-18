@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: backend-deny-egress
+spec:
+  podSelector:
+    matchLabels:
+      app: eshop
+      component: sql-data
+  policyTypes:
+  - Egress
+  egress: []

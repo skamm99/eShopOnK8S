@@ -1,0 +1,116 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: basket
+  namespace: eshop
+spec:
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: basket
+    spec:
+      containers:
+      - name: basket
+        image: aksdemoacr.azurecr.io/basket
+        imagePullPolicy: Always
+        env:
+        - name: ConnectionString
+          valueFrom:
+           configMapKeyRef:
+             name: externalcfg
+             key: basket__ConnectionString
+        ports:
+        - containerPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: catalog
+  namespace: eshop
+spec:
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: catalog
+    spec:
+      containers:
+      - name: catalog
+        image: aksdemoacr.azurecr.io/catalog
+        imagePullPolicy: Always
+        env:
+        - name: ConnectionString
+          valueFrom:
+           configMapKeyRef:
+             name: externalcfg
+             key: catalog__ConnectionString
+        - name: PicBaseUrl
+          value: http://aksdemo-ingress.eastus.cloudapp.azure.com/pics/api/v1/catalog/items/[0]/pic/
+        ports:
+        - containerPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: webmvc
+  namespace: eshop
+spec:
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: webmvc
+    spec:
+      containers:
+      - name: webmvc
+        image: aksdemoacr.azurecr.io/eshopweb
+        imagePullPolicy: Always
+        env:
+         - name: PATH_BASE
+           value: /webmvc
+         - name: CatalogUrl
+           value: http://catalog
+         - name: BasketUrl
+           value: http://basket
+        ports:
+        - containerPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: basket-data
+  namespace: eshop
+spec:
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: basket-data
+    spec:
+      containers:
+      - name: basket-data
+        image: redis
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sql-data
+  namespace: eshop
+spec:
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: sql-data
+    spec:
+      containers:
+      - name: sql-data
+        image: microsoft/mssql-server-linux:2017-latest
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: MSSQL_PID
+          value: Developer
+        - name: MSSQL_SA_PASSWORD
+          value: Pass@word

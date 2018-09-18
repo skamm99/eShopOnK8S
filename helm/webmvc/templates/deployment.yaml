@@ -1,0 +1,39 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ template "webmvc.fullname" . }}
+  labels:
+    app: {{ .Values.appName }}
+    chart: "{{ .Chart.Name }}-{{.Chart.Version}}"
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    component: {{ .Values.component }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+      component: {{ .Values.component }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+        release: {{ .Release.Name }}
+        component: {{ .Values.component }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          env:
+            - name: CatalogUrl
+              value: http://{{ .Values.app.services.catalog }}
+            - name: BasketUrl
+              value: http://{{ .Values.app.services.basket }}
+            - name: ConnectionString
+              value: Server={{ .Values.sqlserver.host }};Initial Catalog={{ .Values.sqlserver.catalog.db }};User Id={{ .Values.sqlserver.creds.user }};Password={{ .Values.sqlserver.creds.pswd }};

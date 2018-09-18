@@ -1,0 +1,17 @@
+
+app:
+  name: eshop
+  services:
+    catalog: catalog
+    webmvc: webmvc
+    basket: basket
+
+sqlserver:
+  host: sql-data
+  pid: Developer
+  accept_eula: "Y"
+  creds:
+    user: sa
+    pswd: P@ssword
+  catalog:
+    db: CatalogDb

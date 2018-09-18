@@ -1,0 +1,154 @@
+
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-configuration
+  namespace: eshop
+  labels:
+    app: ingress-nginx
+data:
+  ssl-redirect: "false"
+  proxy-buffer-size: "128k"
+  proxy-buffers: "4 256k"
+---
+# Nginx backend service that returns 404 when no match
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-default-backend
+spec:
+  ports:
+  - port: 80
+    targetPort: http
+  selector:
+    app: nginx-default-backend
+---
+# Nginx backend service deployment
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: nginx-default-backend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx-default-backend
+    spec:
+      terminationGracePeriodSeconds: 60
+      containers:
+      - name: default-http-backend
+        image: gcr.io/google_containers/defaultbackend:1.0
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 30
+          timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: 10m
+            memory: 20Mi
+          requests:
+            cpu: 10m
+            memory: 20Mi
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP
+---
+  # Nginx service exposed as a load balancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-nginx
+spec:
+  type: LoadBalancer
+  selector:
+    app: ingress-nginx
+  ports:
+  - name: http
+    port: 80
+    targetPort: http
+  - name: https
+    port: 443
+    targetPort: https
+---
+# Nginx controller deployment
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ingress-nginx-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ingress-nginx
+      annotations:
+        prometheus.io/port: '10254'
+        prometheus.io/scrape: 'true' 
+    spec:
+      terminationGracePeriodSeconds: 60
+      containers:
+      - image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.15.0
+        name: ingress-nginx
+        imagePullPolicy: IfNotPresent
+        ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP
+          - name: https
+            containerPort: 443
+            protocol: TCP
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 10254
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /healthz
+            port: 10254
+            scheme: HTTP
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        env:
+          - name: POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+        args:
+        - /nginx-ingress-controller
+        - --default-backend-service=$(POD_NAMESPACE)/nginx-default-backend
+---
+# ingress rules
+
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   labels:
+#     app: eshop
+#     component: frontend
+#   name: eshop-ingress
+#   annotations:
+#     ingress.kubernetes.io/ssl-redirect: "false"  
+# spec:
+#   rules:
+#   - http:
+#       paths:
+#       - path: /webmvc
+#         backend:
+#           serviceName: webmvc
+#           servicePort: 80

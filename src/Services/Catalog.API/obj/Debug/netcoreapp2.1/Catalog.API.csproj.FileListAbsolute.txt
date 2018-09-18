@@ -1,0 +1,28 @@
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.deps.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.runtimeconfig.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.runtimeconfig.dev.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.dll
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.csprojAssemblyReference.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.csproj.CoreCompileInputs.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorAssemblyInfo.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorAssemblyInfo.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.AssemblyInfoInputs.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.AssemblyInfo.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorTargetAssemblyInfo.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.pdb
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.dll
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.csprojAssemblyReference.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.csproj.CoreCompileInputs.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorAssemblyInfo.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorAssemblyInfo.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.AssemblyInfoInputs.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.AssemblyInfo.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.dll
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.deps.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.runtimeconfig.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.runtimeconfig.dev.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.dll
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/bin/Debug/netcoreapp2.1/Catalog.API.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Services/Catalog.API/obj/Debug/netcoreapp2.1/Catalog.API.RazorTargetAssemblyInfo.cache

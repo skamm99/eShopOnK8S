@@ -1,0 +1,14 @@
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\bin\Debug\netcoreapp2.1\Ordering.API.deps.json
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\bin\Debug\netcoreapp2.1\Ordering.API.runtimeconfig.json
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\bin\Debug\netcoreapp2.1\Ordering.API.runtimeconfig.dev.json
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\bin\Debug\netcoreapp2.1\Ordering.API.dll
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\bin\Debug\netcoreapp2.1\Ordering.API.pdb
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.csprojAssemblyReference.cache
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.csproj.CoreCompileInputs.cache
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.RazorAssemblyInfo.cache
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.RazorAssemblyInfo.cs
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.AssemblyInfoInputs.cache
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.AssemblyInfo.cs
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.RazorTargetAssemblyInfo.cache
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.dll
+C:\Users\Kammadanam\Documents\Visual Studio 2017\Projects\eShopOnK8S\src\Services\Ordering.API\obj\Debug\netcoreapp2.1\Ordering.API.pdb

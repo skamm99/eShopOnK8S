@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: web-deny-egress
+spec:
+  podSelector:
+    matchLabels:
+      app: eshop
+      component: webmvc
+  policyTypes:
+  - Egress
+  egress: 
+  - ports: # to allow dns traffic
+    - port: 53
+      protocol: UDP
+    - port: 53
+      protocol: TCP
+  - to:
+    - podSelector: 
+        matchLabels:
+          component: catalog
+    - ipBlock:
+        cidr: 191.238.8.26/32

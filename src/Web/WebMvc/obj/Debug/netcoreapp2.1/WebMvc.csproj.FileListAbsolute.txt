@@ -1,0 +1,72 @@
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.deps.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.runtimeconfig.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.runtimeconfig.dev.json
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.dll
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csproj.CoreCompileInputs.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorAssemblyInfo.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorAssemblyInfo.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.AssemblyInfoInputs.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.AssemblyInfo.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.TagHelpers.input.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.TagHelpers.output.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorCoreGenerate.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Cart/Index.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/Index.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/_pagination.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/_product.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/CartList/Default.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/Cart/Default.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Header.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorTargetAssemblyInfo.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorTargetAssemblyInfo.cs
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csprojAssemblyReference.cache
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.dll
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.pdb
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.pdb
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.Views.dll
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.Views.pdb
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.Views.pdb
+C:/Users/Kammadanam/Documents/Visual Studio 2017/Projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csproj.CopyComplete
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.deps.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.runtimeconfig.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.runtimeconfig.dev.json
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.dll
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.Views.dll
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/bin/Debug/netcoreapp2.1/WebMvc.Views.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csprojAssemblyReference.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csproj.CoreCompileInputs.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorAssemblyInfo.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorAssemblyInfo.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.AssemblyInfoInputs.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.AssemblyInfo.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.TagHelpers.input.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.TagHelpers.output.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorCoreGenerate.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Cart/Index.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/Index.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/_pagination.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Catalog/_product.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/Cart/Default.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/CartList/Default.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Header.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorTargetAssemblyInfo.cache
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.RazorTargetAssemblyInfo.cs
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.Views.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.dll
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.pdb
+/Users/skammadanam/Documents/VSCode/projects/eShopOnK8S/src/Web/WebMvc/obj/Debug/netcoreapp2.1/WebMvc.csproj.CopyComplete

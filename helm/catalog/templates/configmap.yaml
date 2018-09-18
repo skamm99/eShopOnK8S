@@ -1,0 +1,16 @@
+
+{{- $name := include "catalog.fullname" . -}}
+{{- $sqlname := include "sql.name" . -}}
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "cfg-{{ $name }}"
+  labels:
+    app: {{ .Values.appName }}
+    chart: "{{ .Chart.Name }}-{{.Chart.Version}}"
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+data:
+  catalog__ConnectionString: Server={{ $sqlname }};Initial Catalog={{ .Values.sqlserver.catalog.db }};User Id={{ .Values.sqlserver.creds.user }};Password={{ .Values.sqlserver.creds.pswd }};
+  
