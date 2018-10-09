@@ -8,7 +8,21 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  dockerRegistryServer: 'acrdemo99.azurecr.io'
+  imageNameWeb: 'eshopweb'
+  imageNameCatalog: 'catalog'
+  imageNameBasket: 'basket'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- script: |
+    docker build -f src/Web/WebMvc/Dockerfile -t $(dockerRegistryServer)/$(imageNameWeb) src/Web/WebMvc
+    docker build -f src/Services/Catalog.API/Dockerfile -t $(dockerRegistryServer)/$(imageNameCatalog) src/Services/Catalog.API
+    docker build -f src/Services/Basket.API/Dockerfile -t $(dockerRegistryServer)/$(imageNameBasket) src/Services/Basket.API
+    
+- script: docker login -u $(dockerUser) -p $(dockerPass) $(dockerRegistryServer)
+  displayName: 'Docker Login'
+  
+- script: |
+    docker push $(dockerRegistryServer)/$(imageNameWeb)
+    docker push $(dockerRegistryServer)/$(imageNameCatalog)
+    docker push $(dockerRegistryServer)/$(imageNameBasket)
