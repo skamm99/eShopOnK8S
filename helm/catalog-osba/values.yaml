@@ -13,7 +13,7 @@ image:
   pullPolicy: Always
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
@@ -33,13 +33,21 @@ sqlserver:
   catalog:
     db: CatalogDb
 
+externalDatabase:
+  azure:
+    servicePlan: basic
+    location: eastus
+    resourceGroup: aksdemo
+
 env:
   values:
     - name: PicBaseUrl
       value: http://aksdemo-ingress.eastus.cloudapp.azure.com/pics/api/v1/catalog/items/[0]/pic/
-  configmap:
     - name: ConnectionString
-      key: catalog__ConnectionString
+      value: "Server=tcp:$(SQLSERVERHOST),$(SQLPORT);Initial Catalog=$(SQLDB);User Id=$(SQLUSER);Password=$(SQLPSWD);"
+  # configmap:
+  #   - name: ConnectionString
+  #     key: catalog__ConnectionString
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

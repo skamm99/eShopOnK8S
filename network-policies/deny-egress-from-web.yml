@@ -19,5 +19,5 @@ spec:
     - podSelector: 
         matchLabels:
           component: catalog
-    - ipBlock:
+    - ipBlock: # whitelist external service
         cidr: 191.238.8.26/32

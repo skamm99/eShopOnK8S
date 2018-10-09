@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.app.services.catalog }}
+  labels:
+    app: {{ .Values.appName }}
+    chart: "{{.Chart.Name}}-{{.Chart.Version}}"
+    release: {{ .Release.Name | quote }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ .Values.appName }}
+    component: {{ .Values.component }}
+    release: {{ .Release.Name }}

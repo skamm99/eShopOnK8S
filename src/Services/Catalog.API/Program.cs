@@ -110,6 +110,7 @@ namespace Catalog.API
                 catch (Exception ex)
                 {
                     logger.LogError(ex, $"An error occurred while migrating the database used on context {typeof(TContext).Name}");
+                    logger.LogError("Connection String: {0}", context.Database.GetDbConnection().ConnectionString);
                 }
             }
 

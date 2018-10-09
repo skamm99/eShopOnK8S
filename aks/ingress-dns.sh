@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Public IP address of your ingress controller
-IP="XXX.XX.XXX.135"
+IP="137.135.100.28"
 
 # Name to associate with public IP address
 DNSNAME="aksdemo-ingress"

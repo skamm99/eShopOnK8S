@@ -67,6 +67,7 @@ metadata:
     app: eshop
     component: sql-data
   name: sql-data
+  namespace: eshop
 spec:
   ports:
   - port: 1433

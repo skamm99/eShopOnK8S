@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: basket
-        image: aksdemoacr.azurecr.io/basket
+        image: acrdemo99.azurecr.io/basket
         imagePullPolicy: Always
         env:
         - name: ConnectionString
@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: catalog
-        image: aksdemoacr.azurecr.io/catalog
+        image: acrdemo99.azurecr.io/catalog
         imagePullPolicy: Always
         env:
         - name: ConnectionString
@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: webmvc
-        image: aksdemoacr.azurecr.io/eshopweb
+        image: acrdemo99.azurecr.io/eshopweb
         imagePullPolicy: Always
         env:
          - name: PATH_BASE

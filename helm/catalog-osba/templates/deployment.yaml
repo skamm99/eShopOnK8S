@@ -1,0 +1,97 @@
+{{- $name := include "fullname" . -}}
+{{- $cfgname := printf "%s-%s" "cfg" $name -}}
+
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    app: {{ .Values.appName }}
+    chart: "{{ .Chart.Name }}-{{.Chart.Version}}"
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    component: {{ .Values.component }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+      component: {{ .Values.component }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+        release: {{ .Release.Name }}
+        component: {{ .Values.component }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          # command: [ "sh", "-c"]
+          # args:
+          # - while true; do
+          #     echo -en '\n';
+          #     printenv ConnectionString;
+          #     sleep 10;
+          #   done;
+          env:
+            - name: SQLSERVERHOST
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "fullname" . }}-sql-secret
+                  key: host
+            - name: SQLPORT
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "fullname" . }}-sql-secret
+                  key: port
+            - name: SQLDB
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "fullname" . }}-sql-secret
+                  key: database
+            - name: SQLUSER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "fullname" . }}-sql-secret
+                  key: username
+            - name: SQLPSWD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "fullname" . }}-sql-secret
+                  key: password
+          {{- if .Values.env.values -}}
+          {{- range .Values.env.values }}
+            - name: {{ .name }}
+              value: {{ .value }}
+          {{- end -}}
+          {{- end }}
+          {{- if .Values.env.configmap -}}
+          {{- range .Values.env.configmap }}
+            - name: {{ .name }}
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ $cfgname }}
+                  key: {{ .key }}            
+          {{- end -}}
+          {{- end }}
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}
