@@ -8,7 +8,6 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  dockerRegistryServer: 'acrdemo99.azurecr.io'
   imageNameWeb: 'eshopweb'
   imageNameCatalog: 'catalog'
   imageNameBasket: 'basket'
