@@ -1,0 +1,27 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  buildConfiguration: 'Release'
+  imageNameWeb: 'eshopweb'
+  imageNameCatalog: 'catalog'
+  imageNameBasket: 'basket'
+
+steps:
+- script: |
+    docker build -f src/Web/WebMvc/Dockerfile -t $(dockerRegistryServer)/$(imageNameWeb) src/Web/WebMvc
+    docker build -f src/Services/Catalog.API/Dockerfile -t $(dockerRegistryServer)/$(imageNameCatalog) src/Services/Catalog.API
+    docker build -f src/Services/Basket.API/Dockerfile -t $(dockerRegistryServer)/$(imageNameBasket) src/Services/Basket.API
+    
+- script: docker login -u $(dockerUser) -p $(dockerPass) $(dockerRegistryServer)
+  displayName: 'Docker Login'
+  
+- script: |
+    docker push $(dockerRegistryServer)/$(imageNameWeb)
+    docker push $(dockerRegistryServer)/$(imageNameCatalog)
+    docker push $(dockerRegistryServer)/$(imageNameBasket)
