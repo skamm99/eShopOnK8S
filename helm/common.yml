@@ -16,6 +16,6 @@ sqlserver:
   accept_eula: "Y"
   creds:
     user: sa
-    pswd: P@ssword
+    pswd: Pass@word
   catalog:
     db: eShopOnK8S.CatalogDb
