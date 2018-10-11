@@ -5,6 +5,10 @@ app:
     catalog: catalog
     webmvc: webmvc
     basket: basket
+  deployments:
+    catalog: catalog
+    webmvc: webmvc
+    basket: basket
 
 sqlserver:
   host: sql-data

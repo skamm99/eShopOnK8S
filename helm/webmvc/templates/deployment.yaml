@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "webmvc.fullname" . }}
+  name: {{ .Values.app.deployments.webmvc }}
   labels:
     app: {{ .Values.appName }}
     chart: "{{ .Chart.Name }}-{{.Chart.Version}}"

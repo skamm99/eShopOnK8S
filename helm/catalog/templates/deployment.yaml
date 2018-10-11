@@ -4,7 +4,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "catalog.fullname" . }}
+  name: {{ .Values.app.deployments.catalog }}
   labels:
     app: {{ .Values.appName }}
     chart: "{{ .Chart.Name }}-{{.Chart.Version}}"
