@@ -18,4 +18,4 @@ sqlserver:
     user: sa
     pswd: P@ssword
   catalog:
-    db: CatalogDb
+    db: eShopOnK8S.CatalogDb
